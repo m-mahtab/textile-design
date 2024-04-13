@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair:opsz,wght@5..1200,300&family=Port+Lligat+Sans&family=Raleway:wght@300;400&family=Sofia+Sans+Extra+Condensed:wght@200;700&display=swap');
+
+.App {
+  text-align: center;
+
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Times New Roman', Times, serif;
+
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text_stroke {
+  -webkit-text-stroke: 1px white;
+  color: #000;
+}
+
+.navWrapper {
+  align-items: center;
+}
+
+.img-hover-zoom {
+  height: 400px;
+  overflow: hidden;
+}
+
+.img-hover-zoom--brightness img {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+}
+
+.img-hover-zoom--brightness:hover img {
+  transform: scale(1.3);
+}
+
+.modal {
+  transition: transform 2s, filter 1.5s ease-in-out;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal.open {
+  display: flex;
+  opacity: 1;
+}
+.line{
+  height: 2px;
+  width: 144px;
+}
+
+.line::before {
+ height: 2px;
+  content: '';
+  background-color: #ffc765;
+  width: 30px;
+  position: absolute;
+  display: inline-block;
+  transform: translateX(-15px);
+
+}
+
+.name {
+  width: 170px;
+}
+
+.name1 {
+
+  width: 50px;
+  height: 50px;
+  border: 1px solid #7996b5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name1:hover {
+  border: 1px solid #ffc765;
+}
+
+.name1 h4 {
+  font-size: 40px;
+}
+
+.input {
+  width: 100%;
+  background-color: #43586e;
+  opacity: 0.7;
+  border: 1px solid #7996b5;
+  border-radius: 5px;
+  height: 48px;
+  padding-left: 15px;
+
+}
+
+.input1 {
+  width: 100%;
+  background-color: #43586e;
+  opacity: 0.7;
+  border: 1px solid #7996b5;
+  border-radius: 5px;
+  height: 120px;
+  padding: 0 0 0 15px;
+
+}
+
+.circle2 {
+
+  width: 100px;
+  height: 100px;
+  border: 1px solid #7996b5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.custom-dots li button {
+  background-color: white; /* Change background color */
+  border-radius: 50%;
+}
+
+/* Style for the active dot */
+.custom-dots li.slick-active button {
+  background-color: white; /* Change active dot color */
+  border-color: white; /* Optionally, change border color */
+}
+.custom-shadow{
+  box-shadow: inset 0px 0px 5px 4px #607d8b0f, 0px 0px 16px 1px #000000;
+}
+.gredient{
+  background: linear-gradient(to right, #98acc8,  #ffc765, #afc8e3);
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text;
+  color: transparent;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #98acc8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffc765;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0d121b; 
+}
